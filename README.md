@@ -11,3 +11,15 @@ moutain used on about page - <a href="https://www.freepik.com/free-vector/vintag
 background image - pexels
 
 bear staring - Photo by Rasmus Svinding: https://www.pexels.com/photo/brown-bear-35435/
+
+mountain attraction - Photo by Вальдемар from Pexels: https://www.pexels.com/photo/green-trees-on-green-grass-field-12797726/
+
+lake attraction - Photo by Rene Asmussen from Pexels: https://www.pexels.com/photo/tree-near-the-ocean-2196643/
+
+cabin - Photo by Pixabay from Pexels: https://www.pexels.com/photo/autumn-autumn-leaves-beautiful-color-206648/
+
+hiking - Photo by Eric Sanman from Pexels: https://www.pexels.com/photo/group-of-person-walking-in-mountain-1365425/
+
+mountain lion - Photo by Pixabay from Pexels: https://www.pexels.com/photo/nature-animal-wilderness-head-53001/
+
+petting zoo - Photo by Ricky Esquivel from Pexels: https://www.pexels.com/photo/man-holding-alligator-selective-focus-photography-1868861/
