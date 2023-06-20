@@ -37,7 +37,6 @@ ul.nav_links > li {
 section aside.calendar_cont > img {
   width: 350px;
   height: 400px;
- /* margin: 15px; */
   margin-right: -100px;
 }
 
@@ -62,6 +61,15 @@ section > article.schedule_trip, section article.wildlife {
 
 section > article.schedule_trip > aside.calendar_cont {
   display: grid;
+}
+
+section#attraction_section {
+  display: grid;
+  justify-items: center;
+  margin-top: 15px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 10px;
 }
 
 #main_footer {
