@@ -1,0 +1,74 @@
+#main_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+} 
+
+#logo_div {
+  display: flex;
+  align-items: center;
+}
+
+header#main_header > div#logo_div {
+  margin-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div#logo_div > img {
+  width: 100px;
+  height: 100px;
+}
+
+div#logo_div > h1 {
+  margin-left: 5px;
+}
+
+.nav_links {
+  display: flex;
+  margin-right: 50px;
+}
+
+ul.nav_links > li {
+  margin: 0px 15px;
+}
+
+section aside.calendar_cont > img {
+  width: 350px;
+  height: 400px;
+  margin: 15px;
+}
+
+section > aside.body_wildlife > img {
+  width: 400px;
+  height: 350px;
+  border-radius: 5%;
+}
+
+section.body_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+section > article.schedule_trip {
+  display: grid;
+  margin: 15px;
+}
+
+section article.wildlife {
+  margin: 15px;
+}
+
+section > article.schedule_trip > aside.calendar_cont {
+  display: grid;
+}
+
+#main_footer {
+  text-align: center;
+  width: 100%;
+} 
+
