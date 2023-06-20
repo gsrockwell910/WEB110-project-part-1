@@ -92,6 +92,14 @@ section.about_info > h1 {
   margin: 20px;
 }
 
+div.mountain_image > img {
+  display: flex;
+  width: 95%;
+  max-height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 #main_footer {
   display: flex;
   justify-content: center;
