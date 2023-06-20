@@ -11,7 +11,7 @@
 }
 
 header#main_header > div#logo_div {
-  margin-left: 25px;
+  margin-left: 15px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -27,7 +27,7 @@ div#logo_div > h1 {
 
 .nav_links {
   display: flex;
-  margin-right: 50px;
+  margin-right: 15px;
 }
 
 ul.nav_links > li {
@@ -37,13 +37,15 @@ ul.nav_links > li {
 section aside.calendar_cont > img {
   width: 350px;
   height: 400px;
-  margin: 15px;
+ /* margin: 15px; */
+  margin-right: -100px;
 }
 
 section > aside.body_wildlife > img {
   width: 400px;
   height: 350px;
   border-radius: 5%;
+  margin-left: -55px;
 }
 
 section.body_grid {
@@ -54,13 +56,8 @@ section.body_grid {
   align-items: center;
 }
 
-section > article.schedule_trip {
-  display: grid;
-  margin: 15px;
-}
-
-section article.wildlife {
-  margin: 15px;
+section > article.schedule_trip, section article.wildlife {
+  margin: 30px;
 }
 
 section > article.schedule_trip > aside.calendar_cont {
