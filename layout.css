@@ -25,6 +25,7 @@ div#logo_div > h1 {
   margin-left: 5px;
 }
 
+/* Format list */
 .nav_links {
   display: flex;
   margin-right: 15px;
@@ -63,6 +64,7 @@ section > article.schedule_trip > aside.calendar_cont {
   display: grid;
 }
 
+/* Create a grid layout */
 section#attraction_section {
   display: grid;
   justify-items: center;
@@ -76,4 +78,3 @@ section#attraction_section {
   width: 100%;
   margin-top: auto;
 } 
-
