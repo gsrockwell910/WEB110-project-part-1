@@ -21,6 +21,7 @@ Date: 06/20/2023
 This will contain general styles for all of the html pages.
 */
 
+/* Format background */
 html {
   background: url(pics/back_image.jpg) center center / cover no-repeat fixed;
   height: 100%;
@@ -42,6 +43,7 @@ body {
   background-color: var(--main-comp-color);
 }
 
+/* Use contextual selectors and attribute selectors */
 header#main_header > div#logo_div > h1 {
   color: var(--text-comp-color)
 }
@@ -58,12 +60,14 @@ nav > ul.nav_links li > a {
   padding: 0px 10px;
 }
 
+/* Use pseudo-classes for hypertext links */
 nav > ul.nav_links li > a:hover {
   color: var(--sec-text-comp-color);
   border-left: 2px solid var(--sec-text-comp-color);
   border-right: 2px solid var(--sec-text-comp-color);
 }
 
+/* Format text */
 h1 {
   font-family: Quicksand, Verdana, Geneva, sans-serif;
   font-weight: bold;
@@ -71,6 +75,7 @@ h1 {
   line-height: 1;
   margin-bottom: 10px;
 }
+
 
 p {
   font-family: Quicksand, Verdana, Geneva, sans-serif;
@@ -132,14 +137,20 @@ section#attraction_section > figure figcaption {
   padding: 25px 30px;
   border-radius: 5px;
   margin-top: 4em;
+  margin-bottom: 4em;
 }
+
+/* Use relative positioning */
 .container .title {
   font-size: 25px;
   font-weight: 500;
   position: relative;
 }
+
+/* Use psuedo Element */
 .container .title::before {
   content: '';
+  /* Use absolute positioning */
   position: absolute;
   left: 0;
   bottom: 0;
@@ -173,6 +184,8 @@ form .user-details .input-box {
   border-bottom-width: 2px;
   transition: all 0.3s ease;
 }
+
+/* Use psuedo classes */
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
   border-color: 2px var(--sec-comp-color);
@@ -202,7 +215,8 @@ form .button input {
 form .button input:hover {
   background: linear-gradient(-135deg, var(--main-comp-color), var(--sec-comp-color));
 }
-@media (max-width: 584px) {
+
+@media only screen and (max-width: 584px) {
   .container {
       max-width: 100%;
   }
@@ -211,11 +225,100 @@ form .button input:hover {
       width: 100%;
   }
 
+  /* Control overflow */
   .container form .user-details {
       max-height: 300px;
       overflow-y: scroll;
   }
   .user-details::-webkit-scrollbar {
       width: 0;
+  }
+}
+
+
+/* Implement responsive design to different screen widths using @media and flex/flexbox (above) */
+/* Phone styles */
+@media only screen and (max-width: 480px) {
+  html {
+    background: none;
+  }
+
+  section.body_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  #main_header nav > ul.nav_links {
+    display: flex;
+  } 
+
+  #main_header nav > ul.nav_links > a:active {
+    display: flex;
+    color: var(--sec-text-comp-color);
+  }
+
+  section aside.calendar_cont > img, 
+  section > aside.body_wildlife > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px; 
+  }
+
+  section#attraction_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px; 
+  }
+
+  section#attraction_section figure > img {
+    box-shadow: none;
+  }
+
+}
+
+/* Tablet styles */
+@media only screen and (max-width: 769px) {
+  html {
+    background: none;
+  }
+
+  section.body_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  #main_header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main_header nav > ul.nav_links {
+    display: flex;
+  }
+
+  section aside.calendar_cont > img, 
+  section > aside.body_wildlife > img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px; 
+    margin-bottom: 45px;
+  }
+
+  section#attraction_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px; 
+  }
+
+  section#attraction_section figure > img {
+    box-shadow: none;
   }
 }
