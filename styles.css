@@ -247,23 +247,6 @@ form .button input:hover {
   background: linear-gradient(-135deg, var(--main-comp-color), var(--sec-comp-color));
 }
 
-
-.yes-or-no-radio {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.opt-group {
-  position: relative;
-  margin-left: 100px;
-}
-
-div.slide-num-cont {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
 @media only screen and (max-width: 584px) {
   .container {
       max-width: 100%;
