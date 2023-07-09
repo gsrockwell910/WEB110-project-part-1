@@ -200,7 +200,7 @@ form .user-details .input-box {
 }
 .user-details .input-box input {
   height: 45px;
-  width: 100%;
+  width: 94%;
   outline: none;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -221,8 +221,13 @@ form .button {
   margin: 45px 0;
 }
 
+.button {
+  display: flex;
+  gap: 20px;
+}
+
 div.input-box > textarea {
-  width: 217%;
+  width: 106%;
 }
 
 form .button input {
@@ -237,8 +242,26 @@ form .button input {
   letter-spacing: 1px;
   background: linear-gradient(135deg, var(--main-comp-color), var(--sec-comp-color));
 }
+
 form .button input:hover {
   background: linear-gradient(-135deg, var(--main-comp-color), var(--sec-comp-color));
+}
+
+
+.yes-or-no-radio {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.opt-group {
+  position: relative;
+  margin-left: 100px;
+}
+
+div.slide-num-cont {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 @media only screen and (max-width: 584px) {
