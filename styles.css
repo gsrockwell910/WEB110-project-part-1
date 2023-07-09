@@ -132,6 +132,15 @@ button#alert_box {
   border-radius: 5px;
 }
 
+#days, #hrs, #mins, #secs {
+  font-size: 3em;
+}
+
+div#countdown > div > p {
+  font-size: 1.5em;
+  margin-right: 20px;
+}
+
 #main_footer {
   display: flex;
   justify-content: center;
