@@ -28,7 +28,8 @@
     <div class="container">
       <div class="title">Contact us</div>
       <form action="mailto:gavinskateface@gmail.com" method="post" enctype="application/x-www-form-urlencoded">
-          <div class="user-details">
+          <fieldset class="user-details" id="visiter-info">
+            <legend>Visiter Details</legend>
               <div class="input-box">
                   <span class="details">First Name</span>
                   <input type="text" placeholder="Enter your first name" required/>
@@ -43,15 +44,100 @@
               </div>
               <div class="input-box">
                   <span class="details">Phone Number</span>
-                  <input type="text" placeholder="+(123)-456-7891" required/>
+                  <input type="phone" placeholder="+(123)-456-7891" required pattern='^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$' minlength="10"/>
               </div>
               <div class="input-box">
                   <span class="details">Your question</span>
                   <textarea placeholder="Enter your question here"></textarea>
               </div>
-          </div>
-          <div class="button">
-              <input type="submit" value="Submit">
+    
+             <div class="input-box">
+                <label for="visit-reas" class="details">What was your reason for visiting?</label>
+                <input name="visit" id="visit-reas" type="text" list="visit-options" />
+                <datalist id="visit-options">
+                   <option value="Vacation">
+                   <option value="Skiing">
+                   <option value="Hiking">
+                   <option value="Petting Zoo">
+                   <option value="Observe Nature">
+                   <option value="Other">
+                </datalist>
+             </div>
+    
+             <div class="input-box">
+                <label for="visit-spin" class="details">How many times have you visited?</label>
+                <input name="visit-spinner" id="visit-spin" type="number" value="1" step="1" min="0" max="25" />
+             </div>
+             </fieldset>
+    
+             <fieldset class="user-details" id="cust-exp-info">
+                <legend>Share Your Experience at Grand Nature Preserve</legend>
+    
+                <div class="input-box">
+                   <label for="visit" class="details">Date of visit</label>
+                   <input name="visit-date" id="visit" type="date" />
+                </div>
+    
+                <div class="input-box">
+                   <label for="rating" class="details">How likely are you to visit again?</label>
+                   <select name="rating" id="rate">
+                      <option value="rate1">Very Likely</option>
+                      <option value="rate2" selected>Likely</option>
+                      <option value="rate3">Not Likely</option>
+                      <option value="rate4">Never</option>
+                   </select>
+                </div>
+    
+                <div class="input-box">
+                   <label for="info" class="details">Did you see anything interesting?
+                   <br />(select all that apply)
+                   </label>
+                   <select name="info" id="info" size="5" multiple>
+                      <option value="snake">Snake</option>
+                      <option value="bat">Bat</option>
+                      <option value="mothman">Mothman</option>
+                      <option value="ape">Ape</option>
+                      <option value="bigfoot">Bigfoot</option>
+                      <option value="other">Other</option>
+                   </select>
+                </div>
+    
+                <div class="yes-or-no-radio">
+                   <label class="details">Where the trails maintained and walkable?</label>
+                   <fieldset class="opt-group">
+                      <label for="tYes" class="details">Yes</label>
+                      <input name="tMaintain" id="tYes" value="yes" type="radio" />
+                      <label for="tNo" class="details">No</label>
+                      <input name="tMaintain" id="tNo" value="no" type="radio" />
+                   </fieldset>
+                </div>
+    
+                <div class="yes-or-no-radio">
+                   <label class="details">Was your rental home clean upon arrival?</label>
+                   <fieldset class="opt-group">
+                      <label for="hYes" class="details">Yes</label>
+                      <input name="homeClean" id="hYes" value="yes" type="radio" />
+                      <label for="hNo" class="details">No</label>
+                      <input name="homeClean" id="hNo" value="no" type="radio" />
+                   </fieldset>
+                </div>
+    
+                <div class="input-box">
+                   <label for="range-box" class="details">Rate the overall experience<br />(0=poor; 10=great)</label>
+                   <input name="service-rate" id="range-box" type="range" value="5" step="1" min="0" max="10" />
+                   <div class="slide-num-cont">
+                      <span class="slide-num">0</span>
+                      <span class="slide-num">10</span>
+                    </div>
+                </div>
+             </fieldset>
+    
+              <div class="button">
+                  <input type="submit" value="Submit My Survey" />
+                  <input type="reset" value="Cancel" />
+              </div>
+
+
           </div>
       </form>
   </div>
