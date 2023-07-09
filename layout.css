@@ -98,3 +98,19 @@ button#alert_box {
   margin-right: auto;
   margin-left: auto;
 }
+
+.yes-or-no-radio {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.opt-group {
+  position: relative;
+  margin-left: 100px;
+}
+
+div.slide-num-cont {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
