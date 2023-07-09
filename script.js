@@ -23,9 +23,9 @@ function runClock() {
    var secsLeft = (minsLeft - Math.floor(minsLeft)) * 60;
 
 
-   document.getElementById("days").textContent = Math.floor(daysLeft);
-   document.getElementById("hrs").textContent = Math.floor(hrsLeft);
-   document.getElementById("mins").textContent = Math.floor(minsLeft);
+   document.getElementById("days").textContent = Math.floor(daysLeft) + " :";
+   document.getElementById("hrs").textContent = Math.floor(hrsLeft) + " :";
+   document.getElementById("mins").textContent = Math.floor(minsLeft) + " :";
    document.getElementById("secs").textContent = Math.floor(secsLeft);
 }
 
