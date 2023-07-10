@@ -1,14 +1,15 @@
-runClock();
-setInterval("runClock()", 1000);
+"use strict";
 
 
-function runClock() {
+runClock(); // Create and call a function that keeps track of the current day and time
+setInterval("runClock()", 1000); // Delay/ Run a command at specified interval
 
 
-  
+function runClock() { 
+  // Include a countdown function
    var currentDay = new Date();
 
-   var dateStr = currentDay.toLocaleDateString();
+   var dateStr = currentDay.toLocaleDateString(); // Convert between a number and a text
    var timeStr = currentDay.toLocaleTimeString();
 
 
@@ -18,7 +19,7 @@ function runClock() {
    var daysLeft = (newYear - currentDay) / (1000 * 60 * 60 * 24);
 
 
-   var hrsLeft = (daysLeft - Math.floor(daysLeft)) * 24;
+   var hrsLeft = (daysLeft - Math.floor(daysLeft)) * 24; // Use a Math method
    var minsLeft = (hrsLeft - Math.floor(hrsLeft)) * 60;
    var secsLeft = (minsLeft - Math.floor(minsLeft)) * 60;
 
@@ -30,7 +31,7 @@ function runClock() {
 }
 
 function message() {
-  window.alert("That's right, Dinosaurs! Cloned from real ethically sourced fossils.");
+  window.alert("That's right, Dinosaurs! Cloned from real ethically sourced fossils."); // Send an alert using js
   document.body.style.backgroundImage = "url('pics/dino.avif')";
   document.body.style.color = "#ADD7F6";
 }
