@@ -254,7 +254,7 @@ form .button input:hover {
   background: linear-gradient(-135deg, var(--main-comp-color), var(--sec-comp-color));
 }
 
-
+/* Use focus psuedo class to style valid boxes */
 input#first:focus:valid,
 input#last:focus:valid,
 input#phone:focus:valid,
@@ -265,7 +265,7 @@ input#visit-reas:focus:valid {
 }
 
 
-
+/* Use focus psuedo class to style invalid boxes */
 input#first:focus:invalid,
 input#last:focus:invalid,
 input#phone:focus:invalid,
@@ -273,6 +273,10 @@ input#mail:focus:invalid,
 input#visit:focus:invalid,
 input#visit-reas:focus:invalid{
    background: rgb(255, 232, 233);
+}
+
+#mailing {
+  display: flex;
 }
 
 
