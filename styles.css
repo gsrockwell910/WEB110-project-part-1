@@ -211,10 +211,17 @@ form .user-details .input-box {
 }
 
 /* Use psuedo classes */
-.user-details .input-box input:focus,
-.user-details .input-box input:valid {
-  border-color: 2px var(--sec-comp-color);
+/*
+.input-box input:focus,
+.input-box input:valid {
+  background: rgb(220, 255, 220);
 }
+
+.input-box input:focus,
+.input-box input:invalid {
+  background: rgb(255, 232, 233);
+}
+*/
 
 form .button {
   height: 45px;
@@ -227,7 +234,7 @@ form .button {
 }
 
 div.input-box > textarea {
-  width: 106%;
+  width: 212%;
 }
 
 form .button input {
@@ -246,6 +253,28 @@ form .button input {
 form .button input:hover {
   background: linear-gradient(-135deg, var(--main-comp-color), var(--sec-comp-color));
 }
+
+
+input#first:focus:valid,
+input#last:focus:valid,
+input#phone:focus:valid,
+input#mail:focus:valid,
+input#visit:focus:valid,
+input#visit-reas:focus:valid {
+   background: rgb(220, 255, 220);
+}
+
+
+
+input#first:focus:invalid,
+input#last:focus:invalid,
+input#phone:focus:invalid,
+input#mail:focus:invalid,
+input#visit:focus:invalid,
+input#visit-reas:focus:invalid{
+   background: rgb(255, 232, 233);
+}
+
 
 @media only screen and (max-width: 584px) {
   .container {
